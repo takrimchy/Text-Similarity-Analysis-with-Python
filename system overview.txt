@@ -1,0 +1,18 @@
+1. Tokenization
+Purpose: Breaks the text into individual words or phrases, which is essential for any text analysis.
+2. Stop Word Removal
+Purpose: Removes common words that might be prevalent in all documents but don't contribute to uniqueness (e.g., "the", "and").
+3. Case Normalization
+Purpose: Treats words with different cases (e.g., "Apple" vs. "apple") uniformly.
+4. Lemmatization
+Purpose: Reduces words to their base or dictionary form, which is more sophisticated than stemming. This is important in academic contexts where the exact meaning of words matters.
+5. TF-IDF Vectorization
+Purpose: Weighs terms based on how unique they are across the submitted assignments. It helps to highlight parts of the text that are more likely to be unique and, therefore, more significant in plagiarism analysis.
+6. Cosine Similarity
+Purpose: Measures the similarity between documents. A high cosine similarity score between two documents indicates a high degree of similarity, which could be a sign of plagiarism.
+
+Implementation Considerations
+Performance: Depending on the number of assignments and their length, consider the performance. TF-IDF and cosine similarity calculations can be resource-intensive for large datasets.
+User Interface: A simple and intuitive interface for teachers to upload documents and view results is crucial.
+Results Interpretation: Present the results in an easily interpretable format, such as a percentage similarity score between each pair of documents.
+Privacy and Security: Ensure the security and confidentiality of student assignments.
